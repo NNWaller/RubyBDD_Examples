@@ -18,7 +18,7 @@ describe Triangle do
     end
 
     it "has a value for side_3" do
-        expect(triangle_1.side_3).to eq(7)
+      expect(triangle_1.side_3).to eq(7)
     end
   end
 end
