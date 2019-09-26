@@ -55,7 +55,7 @@ end
 class TriangleError < StandardError
 
     def message
-        "Triangle cannot exist!  The sum of the lengths of any two sides of a triangle always equals or exceeds the length of the third side."
+        "Triangle cannot exist! The sum of the lengths of any two sides of a triangle always equals or exceeds the length of the third side. No sides can be less than or equal to zero."
     end
 
 end                                                                              
