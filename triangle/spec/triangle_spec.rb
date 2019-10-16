@@ -4,7 +4,7 @@ require_relative '../triangle.rb'
 
   
   describe "classify_triangle method" do
-    it "raises TriangleError if the sum of any two sides does not equal or exceed the length of remaining side" do
+    it "raises InvalidTriangleError if the sum of any two sides does not equal or exceed the length of remaining side" do
          triangle = Triangle.new(2,2,7)
          begin
            expect(triangle.classify_triangle).to raise_error(InvalidTriangleError)
@@ -13,7 +13,7 @@ require_relative '../triangle.rb'
          end   
     end
 
-    it "raises TriangleError if any side value is less than or equal to zero" do
+    it "raises InvalidTriangleError if any side value is less than or equal to zero" do
         triangle = Triangle.new(-1,8,7)
         begin
           expect(triangle.classify_triangle).to raise_error(InvalidTriangleError)
