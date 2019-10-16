@@ -11,7 +11,7 @@ class Triangle
         case 
         
         when triangle_not_valid 
-             raise InvalidTriangleError
+            raise InvalidTriangleError
         
         when triangle_has_all_sides_equal
             "equilateral"
