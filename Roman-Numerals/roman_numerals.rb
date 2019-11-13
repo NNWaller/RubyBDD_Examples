@@ -1,5 +1,3 @@
-class Roman_Numerals
-  attr_accessor :arabic_number
 
   def to_Roman(arabic_number)
 
@@ -88,4 +86,3 @@ class Roman_Numerals
       the_combined_letters.join("")
       
   end
-end 
